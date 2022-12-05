@@ -1,0 +1,22 @@
+[
+    {
+        "ID":1,
+        "Universidad":"Licenciado en Universidad de Valparaiso",
+        "Nombre":"Jose Fuentes",
+        "Cargo":"Medico especialista en Medicina general"
+    },
+
+    {
+        "ID":2,
+        "Universidad":"Licenciado en Universidad de Chile",
+        "Nombre":"Anaís Alarcon",
+        "Cargo":"Medico especialista en Pediatria"
+    },
+
+    {
+        "ID":3,
+        "Universidad":"Escuela Latinoamerica de Medicina",
+        "Nombre":"Carlos Lara",
+        "Cargo":"Medico especialista en Medicina General"
+    }
+]

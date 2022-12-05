@@ -1,0 +1,53 @@
+
+body{
+  background-image: url("https://www.clinicapyc.com/wp-content/uploads/2022/03/hospital-de-dia-parejo-y-canero-28.jpg.webp");
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+
+}
+
+a:link, a:visited,  a:hover, a:active {
+  color: aliceblue;
+  text-decoration: none;
+}
+.Iniciar {
+  margin-top: 110px;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 50px;
+  background-color: #3C8190;
+  border-radius: 10px;
+}
+.Calendario {
+  margin-top: 210px;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 50px;
+  background-color: #3C8190;
+  border-radius: 10px;
+}
+.RegistrarPaciente {
+  margin-top: 310px;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 50px;
+  background-color: #3C8190;
+  border-radius: 10px;
+}
+.Reservar {
+  margin-top: 410px;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 50px;
+  background-color: #3C8190;
+  border-radius: 10px;
+}

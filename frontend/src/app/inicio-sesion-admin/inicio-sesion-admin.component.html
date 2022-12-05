@@ -1,0 +1,45 @@
+<div class="cover">
+
+    <div class="page-header">
+        <h3>Iniciar Sesión Administrador</h3>
+    </div>
+    
+    <div class="container py-5">
+    <form [formGroup]="formularioLoginAdmin" (ngSubmit)="submit()" >
+    
+        <div class="mb-3">
+            <label for="nombre" class="form-label"> Rut:</label>
+            <input type="rut"  formControlName="rut" placeholder="Ej: 12345678-9" class="form-control">
+            <span *ngIf="this.formularioLoginAdmin.get('rut')?.errors?.['required']" class="text">
+                (El nombre no puede quedar vacío)
+            </span>
+            <span *ngIf="this.formularioLoginAdmin.get('rut')?.errors?.['minlength']" class="textN">
+                (Formato invalido)
+            </span>
+            <span *ngIf="this.formularioLoginAdmin.get('rut')?.errors?.['maxlength']" class="textN">
+                (Formato invalido)
+            </span>
+ 
+            
+        </div>
+    
+        <div class="mb-3">
+            <label for="password" class="form-label"> Contraseña: </label>
+            <input type="password"  formControlName="password" placeholder="Ingrese contraseña" class="form-control">
+            <span *ngIf="this.formularioLoginAdmin.get('password')?.errors?.['required']"class="text">
+                (El campo no puede quedar vacío)
+            </span>
+            <span *ngIf="this.formularioLoginAdmin.get('password')?.errors?.['minlength']" class="textN">
+                (Debe tener mínimo 8 caracteres)
+              </span>
+        </div>
+      
+        <p>
+            <button type="submit" [disabled]="formularioLoginAdmin.invalid"><a [routerLink]="['/admin']" routerLink="router-link-active">Ingresar</a></button>
+        </p>
+
+
+    </form>
+    <div>{{resultado}} </div>
+</div>
+</div>

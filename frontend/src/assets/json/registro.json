@@ -1,0 +1,19 @@
+[
+    {
+        "nombre":"juana",
+        "apellido":"del rio",
+        "rut":"20183872-3",
+        "mail":"juana@gmail.com",
+        "fono":"22997722",
+        "password":"hola1234"
+    },
+
+    {
+        "nombre":"patricia",
+        "apellido":"rivera",
+        "rut":"20183872-2",
+        "mail":"paty@gmail.com",
+        "fono":"12377723",
+        "password":"adios567"
+    }
+]
