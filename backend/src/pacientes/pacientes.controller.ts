@@ -1,4 +1,6 @@
 import { Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { CreatePacientesDto } from './dtos/create-pacientes.dto';
+import { UpdatePacientesDto } from './dtos/update-pacientes.dto';
 
 @Controller('pacientes')
 export class PacientesController {
@@ -16,13 +18,13 @@ export class PacientesController {
     }
 
     @Post()
-    async createPacientes(pacienteDto: any){
-        return 'crear paciente';
+    async createPacientes(pacienteDto: CreatePacientesDto){
+        return pacienteDto;
     }
 
     @Put(':rut')
-    async updatePacientes(@Param('rut') rut: string){
-        return 'editar paciente';
+    async updatePacientes(@Param('rut') rut: string, pacienteDto: UpdatePacientesDto){
+        return pacienteDto;
     }
 
     @Delete(':rut')
