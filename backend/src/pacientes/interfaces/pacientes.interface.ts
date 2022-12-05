@@ -1,4 +1,5 @@
-export interface IPaciente{
+import { Document } from "mongoose";
+export interface IPaciente extends Document{
     nombre: string;
     apellidos: string;
     rut: string;
